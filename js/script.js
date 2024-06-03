@@ -1,37 +1,38 @@
-
 window.onload = function() {
     const image1 = document.getElementById('image1');
     const image2 = document.getElementById('image2');
     const baby = document.getElementById('baby');
-
+    
+    
     function moveImages() {
-        image1.style.transform = 'translate(14vw, -50%)';
-        image2.style.transform = 'translate(-13vw, -50%)';
+        image1.style.transform = 'translate(18vw, -50%)';
+        image2.style.transform = 'translate(-18vw, -50%)';
 
         setTimeout(() => {
             image1.style.opacity = '0';
             image2.style.opacity = '0';
             baby.style.animation = 'explode 20s forwards'; // animacion en la que aparece la pequeña
             confetisRosas();
-        }, 8000); // Ajusta el tiempo según la duración de la animación de movimiento
+        }, 5000); // Ajusta el tiempo según la duración de la animación de movimiento
     
-        document.querySelector('.animation-container').addEventListener("animationend", function() {
-            document.querySelector('.oculto').style.display = "block";
-            
-        });
-    }
 
+    }
+    document.querySelector('.animation-container').addEventListener("animationend", function() {
+        document.querySelector('.oculto').style.display = "block";
+        
+    });
     moveImages();
     confetis();
-    // Opcional: Ajustar el volumen del audio
-    const audio = document.getElementById('background-music');
+    
+
     
 };
 
 function confetis(){
 
-    var end = Date.now() + (15 * 100);
+    var end = Date.now() + (15 * 450);
     console.table(end);
+    document.querySelector('.oculto').style.display = "none";
 
         // go Buckeyes!
         var colors = ['#bb0000', '#ffffff'];
@@ -61,6 +62,7 @@ function confetis(){
 
 function confetisRosas(){
 
+    
     var end = Date.now() + (15 * 10000);
 
         // go Buckeyes!
@@ -84,8 +86,11 @@ function confetisRosas(){
 
             if (Date.now() < end) {
                 requestAnimationFrame(frame);
+                
             }
         }());
+
+        
 
 }
 
@@ -136,4 +141,3 @@ function changeBackgroundColor() {
 // Inicia el cambio de color
 changeBackgroundColor();
 
-// Configuracion de Confetis

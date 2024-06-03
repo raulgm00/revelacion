@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    color: #FF69B4; /* Rosa más intenso para el título */
+    color: #FFC0CB; /* Rosa más intenso para el título */
     font-size: 3em;
     margin-bottom: 20px;
 }
@@ -77,14 +77,13 @@ h1 {
 
 #image1 {
     left: 0;
-    width: 200px;
+    width: 20vw;
 
 }
 
 #image2 {
     right: 0;
-    
-    width: 180px;
+    width: 28vw;
     
 }
 
@@ -120,10 +119,10 @@ h1 {
 
 @keyframes crecer {
     0% {
-        transform: scale(1); /* Tamaño normal al inicio */
+        transform: scale(0.5); /* Tamaño normal al inicio */
     }
     100% {
-        transform: scale(1.2); /* Crecer a 1.5 veces el tamaño original al final */
+        transform: scale(1); /* Crecer a 1.5 veces el tamaño original al final */
     }
 }
 
