@@ -5,7 +5,7 @@ window.onload = function() {
     const baby = document.getElementById('baby');
 
     function moveImages() {
-        image1.style.transform = 'translate(12vw, -50%)';
+        image1.style.transform = 'translate(14vw, -50%)';
         image2.style.transform = 'translate(-13vw, -50%)';
 
         setTimeout(() => {
@@ -25,7 +25,6 @@ window.onload = function() {
     confetis();
     // Opcional: Ajustar el volumen del audio
     const audio = document.getElementById('background-music');
-    audio.volume = 0.5; // Ajusta el volumen entre 0.0 (silencio) y 1.0 (máximo)
     
 };
 
