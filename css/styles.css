@@ -57,6 +57,11 @@ h1 {
 
 .animation-container {
     position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -72,13 +77,13 @@ h1 {
 
 #image1 {
     left: 0;
-    width: 200px;
+    width: 40vw;
 
 }
 
 #image2 {
     right: 0;
-    width: 200px;
+    width: 40vw;
 }
 
 .explosion-image {

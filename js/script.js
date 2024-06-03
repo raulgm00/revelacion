@@ -23,6 +23,9 @@ window.onload = function() {
 
     moveImages();
     confetis();
+    // Opcional: Ajustar el volumen del audio
+    const audio = document.getElementById('background-music');
+    audio.volume = 0.5; // Ajusta el volumen entre 0.0 (silencio) y 1.0 (máximo)
     
 };
 
