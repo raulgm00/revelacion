@@ -32,3 +32,16 @@ body {
 .move-down {
     transform: translate(-50%, calc(-50% + 50px)); /* Mover hacia abajo 50 píxeles */
 }
+
+.crecimiento-infinito {
+    animation: crecer 0.5s infinite alternate; /* Nombre de la animación, duración, número de repeticiones e iteración alternada */
+}
+
+@keyframes crecer {
+    0% {
+        transform: scale(0.1); /* Tamaño normal al inicio */
+    }
+    100% {
+        transform: scale(5.5); /* Crecer a 1.5 veces el tamaño original al final */
+    }
+}
