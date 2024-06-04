@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revelación de Sexo del Bebé</title>
     <link rel="stylesheet" href="./css/styles_index.css">
 </head>
+
 <body>
-    <div class="container">
+    <div class="container fireworks" >
         <h1>¡Revelación del Sexo del Bebé!</h1>
         <br><br><br><br><br>
         <div id="contador" class="crecimiento-infinito">10</div>
         <br><br><br>
         <div id="resultado" style="display: none;"></div>
     </div>
+    <!-- Incluir la biblioteca de confeti desde una CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="./js/script_index.js"></script>
+    <!-- jsDelivr  -->
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+
+<!-- UNPKG -->
+<script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+
+<!-- Usage -->
+<script>
+    const container = document.querySelector('.fireworks')
+    const fireworks = new Fireworks.default(container)
+    fireworks.start()
+</script>
 </body>
+
 </html>
